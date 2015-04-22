@@ -6,4 +6,8 @@ def odd_elements(a_list):
     return my_list
 
 def combine(first_list, second_list):
-    return []
+    final_list = []
+    for index in range(len(first_list)):
+        final_list.append(first_list[index])
+        final_list.append(second_list[index])
+    return final_list
