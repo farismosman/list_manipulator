@@ -6,3 +6,8 @@ class TestListManipulator(TestCase):
         l = lm.odd_elements(["a", "b", "c", "d", "r", "t"])
 
         self.assertEqual(l, ["b", "d", "t"])
+
+    def test_it_combine_two_lists_alternatingly(self):
+        l = lm.combine(["a", "b", "c"], [1, 2, 3])
+
+        self.assertEqual(l, ["a", 1, "b", 2, "c", 3])
